@@ -10,6 +10,9 @@ Devinfra 개발환경 설정파일
 
 # 터미널 설정
 
+## 추천색상
+Solarized - <http://ethanschoonover.com/solarized>
+
 ## zsh 설치
 <http://ohmyz.sh>
 
