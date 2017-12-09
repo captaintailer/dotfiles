@@ -7,3 +7,11 @@ Devinfra 개발환경 설정파일
 
 * Naver D2 CodingFont - <https://github.com/naver/d2codingfont>
 * Naver 나눔고딕코딩 - <https://github.com/naver/nanumfont>
+
+# 터미널 설정
+
+## zsh 설치
+<http://ohmyz.sh>
+
+### powerlevel9k 설치
+<https://github.com/bhilburn/powerlevel9k>
