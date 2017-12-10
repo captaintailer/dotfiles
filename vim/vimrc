@@ -14,16 +14,37 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 """ 유틸리티
-"Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
+"Plugin 'ervandew/supertab'
 
 """ 테마 & 인터페이스
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
+
+""" Generic Programming Support
+Plugin 'jakedouglas/exuberant-ctags'
 
 call vundle#end()
 
 filetype plugin on
 filetype indent on
+
+""""""""""""""""""""""""""""""""""""""""
+" Plugin Config
+""""""""""""""""""""""""""""""""""""""""
+
+""" vim-airline & themes
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme='solarized'
+
+""" NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+""" Tagbar
+map <C-m> :TagbarToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""
 " General
