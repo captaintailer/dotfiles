@@ -18,3 +18,14 @@ Solarized - <http://ethanschoonover.com/solarized>
 
 ### powerlevel9k 설치
 <https://github.com/bhilburn/powerlevel9k>
+
+# OSX 환경설정
+
+## Homebrew 설치
+<code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>
+
+## 개발관련 설치
+<pre>
+<code>brew install macvim</code>
+<code>brew install ctag</code>
+</pre>
