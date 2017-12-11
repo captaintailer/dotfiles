@@ -119,7 +119,7 @@ set fileformats=unix,dos,mac                                                    
 """"""""""""""""""""""""""""""""""""""""
 set t_Co=256                                                                    " 터미널이 256색을 지원한다고 명시적으로 지정
 colorscheme solarized                                                           " 색상표
-    set background=dark                                                         " 바탕화면 색(어두운색)
+set background=dark                                                             " 바탕화면 색(어두운색)
 
 """ 터미널에서 실행하는 경우와 직접 실행하는 경우 설정
 if has('gui_running')
@@ -127,25 +127,28 @@ if has('gui_running')
     set lines=40                                                                " 화면 라인수
     set columns=132                                                             " 화면 컬럼수
 
-    set guioptions-=T                                                           " 툴바를 보이지 않게 한다.
-    set guioptions-=e                                                           " 확인필요
-    set guitablabel=%M\ %t                                                      " 확인필요
+    set guioptions-=M                                                           " 메뉴관련 설정파일 읽지 않음
+    set guioptions-=m                                                           " 메뉴를 숨김
+    set guioptions-=T                                                           " 툴바를 숨김
+    set guioptions-=e                                                           " 탭을 숨김
+    set guitablabel=%M\ %t                                                      " 탭 라벨 설정
 
     """ 스크롤바 비활성화
     set guioptions-=r
     set guioptions-=R
     set guioptions-=l
     set guioptions-=L
+
 endif
- 
+
 """ 시스탬별 폰트 설정 및 색상관련 설정
 if has("mac") || has("macunix")                                                 " OSX
     set guifont=D2Coding:h14
     set guifontwide=D2Coding:h14
 
 elseif has("win16") || has("win32")                                             " Windows
-    set guifont=D2Coding:h14:cDEFAULT
-    set guifontwide=D2Coding:h14:cDEFAULT
+    set guifont=D2Coding:h12:cDEFAULT
+    set guifontwide=D2Coding:h12:cDEFAULT
 
     " True Color 구문강조 설정
     set t_8f=\[[38;2;%lu;%lu;%lum
