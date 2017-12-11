@@ -19,6 +19,11 @@ Solarized - <http://ethanschoonover.com/solarized>
 ### powerlevel9k 설치
 <https://github.com/bhilburn/powerlevel9k>
 
+# Windows 환경설정
+
+## ctags 설치
+<http://ctags.sourceforge.net/>
+
 # OSX 환경설정
 
 ## Homebrew 설치
