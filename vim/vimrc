@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""
 " Tailer Vimrc configuration
 """"""""""""""""""""""""""""""""""""""""
-set nocompatible                                                               " 오리지날 VI와 호환하지 않음
+set nocompatible                                                                " 오리지날 VI와 호환하지 않음
 
 """"""""""""""""""""""""""""""""""""""""
 " Plugin Manager
@@ -49,45 +49,45 @@ map <C-m> :TagbarToggle<CR>
 """"""""""""""""""""""""""""""""""""""""
 " General
 """"""""""""""""""""""""""""""""""""""""
-syntax on                                                                      " 구문강조 사용
+syntax on                                                                       " 구문강조 사용
 
-set history=500                                                                " VIM이 기억해야하는 행의 수를 설정합니다.
-set nowrap                                                                     " 자동 줄바꿈 하지 않음
+set history=500                                                                 " VIM이 기억해야하는 행의 수를 설정합니다.
+set nowrap                                                                      " 자동 줄바꿈 하지 않음
 
 """"""""""""""""""""""""""""""""""""""""
 " VIM User Interface
 """"""""""""""""""""""""""""""""""""""""
-set scrolloff=7                                                                " 커서 주위에 표시 할 스크린 줄 수
+set scrolloff=7                                                                 " 커서 주위에 표시 할 스크린 줄 수
 
-set number                                                                     " 줄번호 표시
-set ruler                                                                      " 쉼표로 구분 된 커서 위치의 행 및 열 번호를 표시
+set number                                                                      " 줄번호 표시
+set ruler                                                                       " 쉼표로 구분 된 커서 위치의 행 및 열 번호를 표시
 
-set tabstop=4                                                                  " 하나의 TAB을 몇 칸으로 인식
-set shiftwidth=4                                                               " 자동 들여쓰기 너비 설정
-set smarttab                                                                   " 적절한 탭위치 자동선정
-set expandtab                                                                  " TAB을 space로 인식
+set tabstop=4                                                                   " 하나의 TAB을 몇 칸으로 인식
+set shiftwidth=4                                                                " 자동 들여쓰기 너비 설정
+set smarttab                                                                    " 적절한 탭위치 자동선정
+set expandtab                                                                   " TAB을 space로 인식
 
-set cmdheight=2                                                                " 명령줄 높이
+set cmdheight=2                                                                 " 명령줄 높이
 
-set hidden                                                                     " 버퍼가 비어지면 숨겨짐
+set hidden                                                                      " 버퍼가 비어지면 숨겨짐
 
-set backspace=eol,start,indent                                                 " 백스페이스가 제대로 작동하도록 구성
-set whichwrap+=<,>,h,l                                                         " 커서 이동 명령 줄 바꿈하기
+set backspace=eol,start,indent                                                  " 백스페이스가 제대로 작동하도록 구성
+set whichwrap+=<,>,h,l                                                          " 커서 이동 명령 줄 바꿈하기
 
-set ignorecase                                                                 " 검색 할 때 대소 문자 무시
-set smartcase                                                                  " 검색 할 때 대문자가 있으면 대소문자 구분해서 검색
-set magic                                                                      " 검색 할 때 정규식 사용편의성 개선
-set hlsearch                                                                   " 검색 결과 강조 표시
-set incsearch                                                                  " 검색 내용을 입력하는 중에 찾아줌
+set ignorecase                                                                  " 검색 할 때 대소 문자 무시
+set smartcase                                                                   " 검색 할 때 대문자가 있으면 대소문자 구분해서 검색
+set magic                                                                       " 검색 할 때 정규식 사용편의성 개선
+set hlsearch                                                                    " 검색 결과 강조 표시
+set incsearch                                                                   " 검색 내용을 입력하는 중에 찾아줌
 
-set showmatch                                                                  " 현재 커서가 놓여진 괄호의 짝을 표시하기
-set matchtime=2                                                                " 짝이 되는 괄호를 보여줄 시간을 1/10초 단위로 지정
+set showmatch                                                                   " 현재 커서가 놓여진 괄호의 짝을 표시하기
+set matchtime=2                                                                 " 짝이 되는 괄호를 보여줄 시간을 1/10초 단위로 지정
 
-set lazyredraw                                                                 " 매크로 실행중 화면을 다시 그리지 않음(성능향상)
+set lazyredraw                                                                  " 매크로 실행중 화면을 다시 그리지 않음(성능향상)
 
-set wildmenu                                                                   " 명령줄 자동 완성 시 메뉴를 사용
+set wildmenu                                                                    " 명령줄 자동 완성 시 메뉴를 사용
 
-set cursorline                                                                 " 현재 행의 강조 표시 사용
+set cursorline                                                                  " 현재 행의 강조 표시 사용
 
 """ 자동완성에서 컴파일 된 파일 무시
 set wildignore=*.o,*~,*.pyc
@@ -104,32 +104,32 @@ set t_vb=
 set tm=500
 
 if has("gui_macvim")
-    autocmd GUIEnter * set vb t_vb=                                            " MacVim의 오류에 대한 올바르지 않은 사운드를 적절히 비활성화
+    autocmd GUIEnter * set vb t_vb=                                             " MacVim의 오류에 대한 올바르지 않은 사운드를 적절히 비활성화
 endif
 
 """"""""""""""""""""""""""""""""""""""""
 " VIM Encoding
 """"""""""""""""""""""""""""""""""""""""
-set encoding=utf8                                                              " 기본 인코딩
-set fileencodings=utf-8,euc-kr                                                 " 파일 인코딩
-set fileformats=unix,dos,mac                                                   " 파일 줄바꿈 포맷
+set encoding=utf8                                                               " 기본 인코딩
+set fileencodings=utf-8,euc-kr                                                  " 파일 인코딩
+set fileformats=unix,dos,mac                                                    " 파일 줄바꿈 포맷
 
 """"""""""""""""""""""""""""""""""""""""
 " VIM Theme & Styling
 """"""""""""""""""""""""""""""""""""""""
-set t_Co=256                                                                   " 터미널이 256색을 지원한다고 명시적으로 지정
-colorscheme solarized                                                          " 색상표
-    set background=dark                                                        " 바탕화면 색(어두운색)
+set t_Co=256                                                                    " 터미널이 256색을 지원한다고 명시적으로 지정
+colorscheme solarized                                                           " 색상표
+    set background=dark                                                         " 바탕화면 색(어두운색)
 
 """ 터미널에서 실행하는 경우와 직접 실행하는 경우 설정
 if has('gui_running')
-    set background=light                                                       " 바탕화면 색(밝은색)
-    set lines=40                                                               " 화면 라인수
-    set columns=132                                                            " 화면 컬럼수
+    set background=light                                                        " 바탕화면 색(밝은색)
+    set lines=40                                                                " 화면 라인수
+    set columns=132                                                             " 화면 컬럼수
 
-    set guioptions-=T                                                          " 툴바를 보이지 않게 한다.
-    set guioptions-=e                                                          " 확인필요
-    set guitablabel=%M\ %t                                                     " 확인필요
+    set guioptions-=T                                                           " 툴바를 보이지 않게 한다.
+    set guioptions-=e                                                           " 확인필요
+    set guitablabel=%M\ %t                                                      " 확인필요
 
     """ 스크롤바 비활성화
     set guioptions-=r
@@ -139,11 +139,11 @@ if has('gui_running')
 endif
  
 """ 시스탬별 폰트 설정 및 색상관련 설정
-if has("mac") || has("macunix")                                                " OSX
+if has("mac") || has("macunix")                                                 " OSX
     set guifont=D2Coding:h14
     set guifontwide=D2Coding:h14
 
-elseif has("win16") || has("win32")                                            " Windows
+elseif has("win16") || has("win32")                                             " Windows
     set guifont=D2Coding:h14:cDEFAULT
     set guifontwide=D2Coding:h14:cDEFAULT
 
@@ -165,7 +165,7 @@ endif
 """"""""""""""""""""""""""""""""""""""""
 " SVN, Git 등의 형상관리를 사용하기 때문에 백업 기능을 끕니다.
 
-set nobackup                                                                   " 백업 파일 생성하지 않음
+set nobackup                                                                    " 백업 파일 생성하지 않음
 set nowritebackup
-set noswapfile                                                                 " 스왑 파일을 생성하지 않음
+set noswapfile                                                                  " 스왑 파일을 생성하지 않음
 
