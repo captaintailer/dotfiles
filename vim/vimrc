@@ -17,6 +17,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 "Plugin 'ervandew/supertab'
+Plugin 'godlygeek/tabular'
+Plugin 'SirVer/ultisnips'
 
 """ 테마 & 인터페이스
 Plugin 'vim-airline/vim-airline'
@@ -25,6 +27,7 @@ Plugin 'altercation/vim-colors-solarized'
 
 """ Generic Programming Support
 Plugin 'jakedouglas/exuberant-ctags'
+Plugin 'honza/vim-snippets'
 
 call vundle#end()
 
@@ -45,6 +48,12 @@ map <C-n> :NERDTreeToggle<CR>
 
 """ Tagbar
 map <C-m> :TagbarToggle<CR>
+
+""" UtilSnips
+let g:UltiSnipsExpandTrigger="<Tab>"                                            " 트리거 설정. YouCompleteMe 사용 시 <Tab> 사용금지
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"                                             " :UltiSnipsEdit 사용 시 윈도우 분할 기준
 
 """"""""""""""""""""""""""""""""""""""""
 " General
@@ -172,3 +181,12 @@ set nobackup                                                                    
 set nowritebackup
 set noswapfile                                                                  " 스왑 파일을 생성하지 않음
 
+""""""""""""""""""""""""""""""""""""""""
+" Language Support
+""""""""""""""""""""""""""""""""""""""""
+
+""" Python
+if has("win16") || has("win32")                                                 " Windows
+    set pythonthreedll=python36.dll                                             " GVIM에서 파이썬3.6이 설치된 경우
+    let g:tagbar_ctags_bin="d:/ctags58/ctags.exe"                               " ctags 실행파일 위치
+endif
