@@ -21,6 +21,9 @@ Solarized - <http://ethanschoonover.com/solarized>
 
 # Windows 환경설정
 
+## GVim 설치
+<https://github.com/vim/vim-win32-installer/releases>
+
 ## ctags 설치
 <http://ctags.sourceforge.net/>
 
