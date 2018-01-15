@@ -27,7 +27,7 @@ Solarized - <http://ethanschoonover.com/solarized>
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 ```
 
-## Chocolatey(NuGet) 개발관련 패키지 설치
+## 개발관련 설치
 ```
 choco install 패키지명
 ```
