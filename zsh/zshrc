@@ -1,10 +1,22 @@
-# PATH
-export PATH=$PATH:$HOME/anaconda3/bin
-# ZSH 테마
-ZSH_THEME="powerlevel9k/powerlevel9k"
+# dirColors 설정
+eval `dircolors $DEVENV_PATH/zsh/dircolors.256dark`
 
 # Aliases
-alias vi="mvim -v"
-alias vim="mvim -v"
+alias gowork="cd $WORKSPACE_PATH"
 
-alias gowork="cd /Volumes/Workspace"
+# 리눅스일 경우
+if [[ `uname` == 'Linux' ]]
+then
+
+fi
+
+# macOS일 경우
+if [[ `uname` == 'Darwin' ]]
+then
+  # PATH
+  export PATH=$PATH:$HOME/anaconda3/bin
+
+  # Aliases
+  alias vi="mvim -v"
+  alias vim="mvim -v"
+fi
