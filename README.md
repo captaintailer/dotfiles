@@ -73,7 +73,7 @@ choco install 패키지명
     - openvpn
     - markdownpad2
 
-# OSX 환경설정
+# macOS 환경설정
 
 ## Homebrew 설치
 ```
@@ -82,6 +82,10 @@ choco install 패키지명
 
 ## 개발관련 설치
 ```
-brew install macvim
-brew install ctag
+brew install 패키지명
 ```
+
+- VIM 패키지모음
+    - macvim
+    - ctag
+
