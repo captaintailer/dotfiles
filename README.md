@@ -5,19 +5,34 @@ Devinfra 개발환경 설정파일
 
 # 개발폰트
 
-* Naver D2 CodingFont - <https://github.com/naver/d2codingfont>
-* Naver 나눔고딕코딩 - <https://github.com/naver/nanumfont>
+* [Naver D2 CodingFont](https://github.com/naver/d2codingfont)
+* [Naver 나눔고딕코딩](https://github.com/naver/nanumfont)
 
 # 터미널 설정
 
-## 추천색상
-Solarized - <http://ethanschoonover.com/solarized>
+## 색상테마
+- [Solarized](http://ethanschoonover.com/solarized)
 
 ## zsh 설치
 <http://ohmyz.sh>
 
 ### powerlevel9k 설치
 <https://github.com/bhilburn/powerlevel9k>
+
+# 개발툴 설정
+
+## Jetbrains 제품군
+
+- [Toolbox Download](https://www.jetbrains.com/toolbox/app/)
+    - 이 프로그램으로 다른 제품들을 설치할 수 있다.
+
+
+- [Solarized 테마 사용하기](https://github.com/jkaving/intellij-colors-solarized)
+
+## Aqua Data Stuio
+
+- [Aqua Data Studio Download](http://www.aquafold.com/aquadatastudio_downloads)
+    - JDBC 기반의 다양한 DB에 접속해서 사용 할 수 있는 툴
 
 # Windows 환경설정
 
