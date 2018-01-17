@@ -32,39 +32,46 @@ Solarized - <http://ethanschoonover.com/solarized>
 choco install 패키지명
 ```
 
-* 개발툴 패키지모음
+- 개발툴 패키지모음
     - git
     - which
 
-* 자바 패키지모음
+
+- 자바 패키지모음
     - jdk8
     - ant
-    - maven    
+    - maven
     - gradle
 
-* Python 패키지모음
+
+- Python 패키지모음
     - python2
     - python3
     - anaconda2
     - anaconda3
 
-* C/C++ 패키지모음
+
+- C/C++ 패키지모음
     - mingw
     - cmake
-    
-* VIM 패키지모음
+
+
+- VIM 패키지모음
     - vim-tux
     - lua53
     - ctags
 
-* R 패키지모음
+
+- R 패키지모음
     - r.project
     - r.studio
 
-* 유틸리티 패키지모음
+
+- 유틸리티 패키지모음
     - sourcetree
     - conemu
     - openvpn
+    - markdownpad2
 
 # OSX 환경설정
 
