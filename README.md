@@ -3,21 +3,48 @@ Devinfra 개발환경 설정파일
 
 개발에 필요한 개발환경 설정에 대한 내용입니다.
 
-# 개발폰트
+# 개발폰트 설치
 
-* [Naver D2 CodingFont](https://github.com/naver/d2codingfont)
-* [Naver 나눔고딕코딩](https://github.com/naver/nanumfont)
+- [Naver D2 CodingFont](https://github.com/naver/d2codingfont)
+- [Naver 나눔고딕코딩](https://github.com/naver/nanumfont)
+
+# 개발환경 설정
+
+- 특정폴더 밑에 환경설정 용 파일을 체크아웃
+```
+git clone https://github.com/captaintailer/devenv D:/Workspace/devenv
+```
 
 # 터미널 설정
 
 ## 색상테마
-- [Solarized](http://ethanschoonover.com/solarized)
+- [Solarized 공식사이트](http://ethanschoonover.com/solarized)
+- [윈도우 프롬프트 적용](https://github.com/neilpa/cmd-colors-solarized)
+- [터미널 디렉토리 표시](https://github.com/seebi/dircolors-solarized)
+
 
 ## zsh 설치
-<http://ohmyz.sh>
+1. 패키지관리 프로그램을 통해서 zsh 설치
+> apt install zsh
+> yum install zsh
 
-### powerlevel9k 설치
-<https://github.com/bhilburn/powerlevel9k>
+2. [Oh My ZSH!](http://ohmyz.sh) 설치
+> ```zsh
+> sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+> ```
+
+3. [powerlevel9k](https://github.com/bhilburn/powerlevel9k) 테마 설치
+> ```zsh
+> git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+> ```
+> 홈디렉토리에 .zshrc파일에서 ZSH_THEME 설정을 찾아서 ZSH_THEME="powerlevel9k/powerlevel9k" 으로 수정함
+
+4. 홈디렉토리 밑에 .zshrc 파일 마지막에 다음 내용 추가
+> ```zsh
+> export WORKSPACE_PATH=D:/Workspace
+> export DEVENV_PATH=$WORKSPACE_PATH/devenv
+> source $DEVENV_PATH/zsh/zshrc
+> ```
 
 # 개발툴 설정
 
@@ -87,6 +114,13 @@ choco install 패키지명
     - conemu
     - openvpn
     - markdownpad2
+
+## Windows 10 Linux 명령사용 환경 구성
+
+* [윈도우 10에서 Bash shell 지원](https://blogs.msdn.microsoft.com/eva/?p=7633)
+* [우분투 앱](https://www.microsoft.com/ko-kr/store/p/ubuntu/9nblggh4msv6)
+
+먼저 윈도우 10에서 Bash shell을 설치한 후에 아래 우분투 앱을 설치하면 윈도우에서 우분투 터미널을 사용 할 수 있다.
 
 # macOS 환경설정
 
