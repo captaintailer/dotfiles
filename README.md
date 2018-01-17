@@ -54,6 +54,7 @@ choco install 패키지명
     
 * VIM 패키지모음
     - vim-tux
+    - lua53
     - ctags
 
 * R 패키지모음
