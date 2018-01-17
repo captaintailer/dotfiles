@@ -34,6 +34,7 @@ choco install 패키지명
 
 * 개발툴 패키지모음
     - git
+    - which
 
 * 자바 패키지모음
     - jdk8
@@ -54,6 +55,7 @@ choco install 패키지명
 * VIM 패키지모음
     - vim
     - ctags
+    - lua    
 
 * R 패키지모음
     - r.project
