@@ -117,8 +117,9 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" MacVim의 오류에 대한 올바르지 않은 사운드를 적절히 비활성화
 if has("gui_macvim")
-    autocmd GUIEnter * set vb t_vb=                                             " MacVim의 오류에 대한 올바르지 않은 사운드를 적절히 비활성화
+    autocmd GUIEnter * set vb t_vb=
 endif
 
 """"""""""""""""""""""""""""""""""""""""
@@ -153,6 +154,18 @@ if has('gui_running')
     set guioptions-=l
     set guioptions-=L
 
+   """  GVIM에서 메뉴를 영문으로 표기
+    set langmenu=en_US
+    let $LANG='en_US'
+    source $VIMRUNTIME/delmenu.vim
+    source $VIMRUNTIME/menu.vim
+
+    highlight ColorColumn guibg=gray                                            " 열 하이라이트 색상
+
+else
+
+    highlight ColorColumn ctermbg=7                                             " 열 하이라이트 색상
+
 endif
 
 """ 시스탬별 폰트 설정 및 색상관련 설정
@@ -165,9 +178,11 @@ elseif has("win16") || has("win32")                                             
     set guifontwide=D2Coding:h12:cDEFAULT
 
     " True Color 구문강조 설정
-    set t_8f=\[[38;2;%lu;%lu;%lum
-    set t_8b=\[[48;2;%lu;%lu;%lum
     set termguicolors
+    if has("gui_running")
+        set t_8f=\[[38;2;%lu;%lu;%lum
+        set t_8b=\[[48;2;%lu;%lu;%lum
+    endif
 
 elseif has("gui_gtk2")
 
@@ -192,6 +207,5 @@ set noswapfile                                                                  
 
 """ Python
 if has("win16") || has("win32")                                                 " Windows
-    set pythonthreedll=python36.dll                                             " GVIM에서 파이썬3.6이 설치된 경우
-    let g:tagbar_ctags_bin="d:/ctags58/ctags.exe"                               " ctags 실행파일 위치
+    let g:tagbar_ctags_bin="C:/ProgramData/chocolatey/bin/ctags.exe"            " ctags 실행파일 위치
 endif
