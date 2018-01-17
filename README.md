@@ -53,9 +53,8 @@ choco install 패키지명
     - cmake
     
 * VIM 패키지모음
-    - vim
+    - vim-tux
     - ctags
-    - lua    
 
 * R 패키지모음
     - r.project
