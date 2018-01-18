@@ -118,9 +118,6 @@ choco install 패키지명
 ## Windows 10 Linux 명령사용 환경 구성
 
 * [윈도우 10에서 Bash shell 지원](https://blogs.msdn.microsoft.com/eva/?p=7633)
-* [우분투 앱](https://www.microsoft.com/ko-kr/store/p/ubuntu/9nblggh4msv6)
-
-먼저 윈도우 10에서 Bash shell을 설치한 후에 아래 우분투 앱을 설치하면 윈도우에서 우분투 터미널을 사용 할 수 있다.
 
 # macOS 환경설정
 
