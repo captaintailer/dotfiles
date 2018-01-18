@@ -118,6 +118,12 @@ choco install 패키지명
 ## Windows 10 Linux 명령사용 환경 구성
 
 * [윈도우 10에서 Bash shell 지원](https://blogs.msdn.microsoft.com/eva/?p=7633)
+* [Vim 8.0 설치하기(lua, python지원)](https://gist.github.com/erickpatrick/5e0923d3645eaf4056b6b9fee4c91e2f)
+
+## 윈도우 파일에 오른쪽 버튼을 눌렀을 경우 Vim 수정 메뉴 추가
+
+1. vim 설치
+2. "devenv/vim/vim-add-context-menu.reg" 파일 실행해서 레지스터 추가
 
 # macOS 환경설정
 
