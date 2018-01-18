@@ -127,7 +127,8 @@ endif
 """"""""""""""""""""""""""""""""""""""""
 set encoding=utf8                                                               " 기본 인코딩
 set fileencodings=utf-8,euc-kr                                                  " 파일 인코딩
-set fileformats=unix,dos,mac                                                    " 파일 줄바꿈 포맷
+set fileformats=unix,dos,mac                                                    " 파일 줄바꿈 포맷 인식순서
+set fileformat=unix                                                             " 파일 줄바꿈 기본 포멧
 
 """"""""""""""""""""""""""""""""""""""""
 " VIM Theme & Styling
