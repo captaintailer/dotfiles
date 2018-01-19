@@ -1,65 +1,40 @@
-Devinfra 개발환경 설정파일
+Tailer의 개발환경 설정하기
 ======================
 
-개발에 필요한 개발환경 설정에 대한 내용입니다.
+제가 사용하는 개발환경설정에 대한 문서 입니다.
+환경설정 작업 순서대로 정리하였습니다.
+
+부족한 부분은 점차적으로 개선해 나가겠습니다.
 
 # 개발폰트 설치
 
 - [Naver D2 CodingFont](https://github.com/naver/d2codingfont)
 - [Naver 나눔고딕코딩](https://github.com/naver/nanumfont)
 
-# 개발환경 설정
+# 개발환경 공통 설정
+
+## git 설정
+* git config  등록
+    1. 사용자 정보 등록
+        ```zsh
+        git config --global user.name "you-name"
+        git config --global user.email youremail.com
+        push.default=simple
+        ```
+
+    2. 개행문자처리
+        ```    
+        # Windows일 경우
+        git config --global core.autocrlf true
+        
+        # macOS / Linux일 경우
+        git config --global core.autocrlf input
+        ```
 
 - 특정폴더 밑에 환경설정 용 파일을 체크아웃
-```
-git clone https://github.com/captaintailer/devenv D:/Workspace/devenv
-```
-
-# 터미널 설정
-
-## 색상테마
-- [Solarized 공식사이트](http://ethanschoonover.com/solarized)
-- [윈도우 프롬프트 적용](https://github.com/neilpa/cmd-colors-solarized)
-- [터미널 디렉토리 표시](https://github.com/seebi/dircolors-solarized)
-
-
-## zsh 설치
-1. 패키지관리 프로그램을 통해서 zsh 설치
-> apt install zsh
-> yum install zsh
-
-2. [Oh My ZSH!](http://ohmyz.sh) 설치
-> ```zsh
-> sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-> ```
-
-3. [powerlevel9k](https://github.com/bhilburn/powerlevel9k) 테마 설치
-> ```zsh
-> git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-> ```
-> 홈디렉토리에 .zshrc파일에서 ZSH_THEME 설정을 찾아서 ZSH_THEME="powerlevel9k/powerlevel9k" 으로 수정함
-
-4. 홈디렉토리 밑에 .zshrc 파일 마지막에 다음 내용 추가
-> ```zsh
-> export WORKSPACE_PATH=D:/Workspace
-> export DEVENV_PATH=$WORKSPACE_PATH/devenv
-> source $DEVENV_PATH/zsh/zshrc
-> ```
-
-# 개발툴 설정
-
-## Jetbrains 제품군
-
-- [Toolbox Download](https://www.jetbrains.com/toolbox/app/)
-    - 이 프로그램으로 다른 제품들을 설치할 수 있다.
-
-
-- [Solarized 테마 사용하기](https://github.com/jkaving/intellij-colors-solarized)
-
-## Aqua Data Stuio
-
-- [Aqua Data Studio Download](http://www.aquafold.com/aquadatastudio_downloads)
-    - JDBC 기반의 다양한 DB에 접속해서 사용 할 수 있는 툴
+    ```
+    git clone https://github.com/captaintailer/devenv ~/.devenv
+    ```
 
 # Windows 환경설정
 
@@ -141,3 +116,52 @@ brew install 패키지명
     - macvim
     - ctag
 
+# 터미널 설정
+
+## 색상테마
+- [Solarized 공식사이트](http://ethanschoonover.com/solarized)
+- [윈도우 프롬프트 적용](https://github.com/neilpa/cmd-colors-solarized)
+- [터미널 디렉토리 표시](https://github.com/seebi/dircolors-solarized)
+
+
+## zsh 설치
+1. 패키지관리 프로그램을 통해서 zsh 설치
+    ```zsh
+    # Ubuntu
+    apt install zsh
+    
+    # Centos
+    yum install zsh
+    ```
+
+2. [Oh My ZSH!](http://ohmyz.sh) 설치
+    ```zsh
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    ```
+
+3. [powerlevel9k](https://github.com/bhilburn/powerlevel9k) 테마 설치
+    ```zsh
+    git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+    ```
+    > 홈디렉토리에 .zshrc파일에서 ZSH_THEME 설정을 찾아서 ZSH_THEME="powerlevel9k/powerlevel9k" 으로 수정함
+
+4. 홈디렉토리 밑에 .zshrc 파일 마지막에 다음 내용 추가
+    ```zsh
+    export WORKSPACE_PATH=D:/Workspace
+    export DEVENV_PATH=~/.devenv
+    source $DEVENV_PATH/zsh/zshrc
+    ```
+
+# 개발툴 설정
+
+## Jetbrains 제품군
+
+- [Toolbox Download](https://www.jetbrains.com/toolbox/app/)
+    - 이 프로그램으로 다른 제품들을 설치할 수 있다.
+
+- [Solarized 테마 사용하기](https://github.com/jkaving/intellij-colors-solarized)
+
+## Aqua Data Stuio
+
+- [Aqua Data Studio Download](http://www.aquafold.com/aquadatastudio_downloads)
+    - JDBC 기반의 다양한 DB에 접속해서 사용 할 수 있는 툴
