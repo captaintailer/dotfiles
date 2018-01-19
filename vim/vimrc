@@ -136,6 +136,7 @@ set fileformat=unix                                                             
 set t_Co=256                                                                    " 터미널이 256색을 지원한다고 명시적으로 지정
 colorscheme solarized                                                           " 색상표
 set background=dark                                                             " 바탕화면 색(어두운색)
+let g:solarized_termcolors=256
 
 """ 터미널에서 실행하는 경우와 직접 실행하는 경우 설정
 if has('gui_running')
