@@ -30,7 +30,12 @@ Plugin 'lifepillar/vim-solarized8'
 """ Generic Programming Support
 Plugin 'jakedouglas/exuberant-ctags'
 Plugin 'honza/vim-snippets'
-  
+
+""" Markdown Preview Support
+if has("mac") || has("macunix")                                                 " OSX
+    Plugin 'JamshedVesuna/vim-markdown-preview'
+endif
+
 call vundle#end()
 
 filetype plugin on
@@ -60,6 +65,9 @@ let g:UltiSnipsEditSplit="vertical"                                             
 """ Neocomplete
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 2
+
+""" vim-markdown-preview
+let vim_markdown_preview_github=1                                               " GitHub flavoured markdown 지원
 
 """"""""""""""""""""""""""""""""""""""""
 " General

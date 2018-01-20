@@ -115,6 +115,7 @@ brew install 패키지명 설치옵션
 - VIM 패키지모음
     - macvim --with-lua --with-luajit --with-override-system-vim --with-python3
     - ctag
+    - grip
 
 # 터미널 설정
 
