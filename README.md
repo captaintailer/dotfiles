@@ -109,11 +109,11 @@ choco install 패키지명
 
 ## 개발관련 설치
 ```
-brew install 패키지명
+brew install 패키지명 설치옵션
 ```
 
 - VIM 패키지모음
-    - macvim
+    - macvim --with-lua --with-luajit --with-override-system-vim --with-python3
     - ctag
 
 # 터미널 설정
