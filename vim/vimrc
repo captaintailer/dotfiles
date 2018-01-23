@@ -144,6 +144,10 @@ colorscheme solarized                                                           
 set background=dark                                                             " 바탕화면 색(어두운색)
 let g:solarized_termcolors=256
 
+if has('termguicolors')
+    set termguicolors                                                           " True Color 구문강조 설정
+endif 
+
 """ 터미널에서 실행하는 경우와 직접 실행하는 경우 설정
 if has('gui_running')
     set background=light                                                        " 바탕화면 색(밝은색)
@@ -171,7 +175,6 @@ if has('gui_running')
     highlight ColorColumn guibg=gray                                            " 열 하이라이트 색상
 
 else
-
     highlight ColorColumn ctermbg=7                                             " 열 하이라이트 색상
 
 endif
@@ -186,10 +189,13 @@ elseif has("win16") || has("win32")                                             
     set guifontwide=D2Coding:h12:cDEFAULT
 
     " True Color 구문강조 설정
-    set termguicolors
     if has("gui_running")
         set t_8f=\[[38;2;%lu;%lu;%lum
         set t_8b=\[[48;2;%lu;%lu;%lum
+
+    else
+        set t_ut=                                                               " 배경색 초기화
+    
     endif
 
 elseif has("gui_gtk2")
