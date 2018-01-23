@@ -24,7 +24,8 @@ Plugin 'Shougo/neocomplete.vim'
 """ 테마 & 인터페이스
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
+Plugin 'lifepillar/vim-solarized8'
 
 """ Generic Programming Support
 Plugin 'jakedouglas/exuberant-ctags'
@@ -140,9 +141,9 @@ set fileformat=unix                                                             
 " VIM Theme & Styling
 """"""""""""""""""""""""""""""""""""""""
 set t_Co=256                                                                    " 터미널이 256색을 지원한다고 명시적으로 지정
-colorscheme solarized                                                           " 색상표
 set background=dark                                                             " 바탕화면 색(어두운색)
-let g:solarized_termcolors=256
+colorscheme solarized8                                                          " 색상표
+"let g:solarized_termcolors=256
 
 if has('termguicolors')
     set termguicolors                                                           " True Color 구문강조 설정
