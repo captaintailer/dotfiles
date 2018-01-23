@@ -196,16 +196,7 @@ if has("mac") || has("macunix")                                                 
 elseif has("win16") || has("win32")                                             " Windows
     set guifont=D2Coding:h12:cDEFAULT
     set guifontwide=D2Coding:h12:cDEFAULT
-
-    " True Color 구문강조 설정
-    if has("gui_running")
-        set t_8f=\[[38;2;%lu;%lu;%lum
-        set t_8b=\[[48;2;%lu;%lu;%lum
-
-    else
-        set t_ut=                                                               " 배경색 초기화
-    
-    endif
+    set t_ut=                                                               " 배경색 초기화
 
 elseif has("gui_gtk2")
 
