@@ -14,7 +14,7 @@ Tailer의 개발환경 설정하기
 # 개발환경 공통 설정
 
 ## git 설정
-* git config  등록
+- git config  등록
     1. 사용자 정보 등록
         ```zsh
         git config --global user.name "you-name"
@@ -84,6 +84,11 @@ choco install 패키지명
     - r.studio
 
 
+- 가상화 & IaC(Infrastructure as Code)
+    - virtualbox
+    - vagrant
+
+
 - 유틸리티 패키지모음
     - sourcetree
     - conemu
@@ -92,8 +97,8 @@ choco install 패키지명
 
 ## Windows 10 Linux 명령사용 환경 구성
 
-* [윈도우 10에서 Bash shell 지원](https://blogs.msdn.microsoft.com/eva/?p=7633)
-* [Vim 8.0 설치하기(lua, python지원)](https://gist.github.com/erickpatrick/5e0923d3645eaf4056b6b9fee4c91e2f)
+- [윈도우 10에서 Bash shell 지원](https://blogs.msdn.microsoft.com/eva/?p=7633)
+- [Vim 8.0 설치하기(lua, python지원)](https://gist.github.com/erickpatrick/5e0923d3645eaf4056b6b9fee4c91e2f)
 
 ## 윈도우 파일에 오른쪽 버튼을 눌렀을 경우 Vim 수정 메뉴 추가
 
@@ -166,3 +171,10 @@ brew install 패키지명 설치옵션
 
 - [Aqua Data Studio Download](http://www.aquafold.com/aquadatastudio_downloads)
     - JDBC 기반의 다양한 DB에 접속해서 사용 할 수 있는 툴
+
+# 앞으로 할일
+- [ ] vagrant와 virtualBox를 설치하여 개발용 서버들 생성
+- [ ] ansible을 이용하여 각서버들 세부 설정
+- [ ] kubernetes를 이용하여 Docker 운영환경 설정
+- [ ] zabbix를 설치하여 전체시스템 모니터링
+- [ ] OVS(Open vSwitch)를 이용하여 서버들을 가상 네트워크로 구성
