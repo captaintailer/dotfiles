@@ -171,16 +171,11 @@ brew install 패키지명 설치옵션
 
 ## VIM 설치
 
-### 파일설정
+### 개발환경 설정파일을 vimrc 파일에 추가하고 플러그인 설치하기
 ```
-echo "source /path/to/devenv_vimrc >> ~/.vimrc"
+echo "source /path/to/devenv_vimrc >> ~/.vimrc" && vim +PluginInstall
 
 ```
-
-### 플러그인 설정
-
-- WakaTime
-    - WakaTimeApiKey : API 키설정
 
 # 개발툴 설정
 
@@ -189,12 +184,14 @@ echo "source /path/to/devenv_vimrc >> ~/.vimrc"
 - [Toolbox Download](https://www.jetbrains.com/toolbox/app/)
     - 이 프로그램으로 다른 제품들을 설치할 수 있다.
 
+
 - [Solarized 테마 사용하기](https://github.com/jkaving/intellij-colors-solarized)
 
 ## Aqua Data Stuio
 
 - [Aqua Data Studio Download](http://www.aquafold.com/aquadatastudio_downloads)
     - JDBC 기반의 다양한 DB에 접속해서 사용 할 수 있는 툴
+
 
 # 앞으로 할일
 - [ ] vagrant와 virtualBox를 설치하여 개발용 서버들 생성

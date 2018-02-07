@@ -20,7 +20,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'godlygeek/tabular'
 Plugin 'SirVer/ultisnips'
 Plugin 'Shougo/neocomplete.vim'
-Plugin 'wakatime/vim-wakatime'
 
 """ 테마 & 인터페이스
 Plugin 'vim-airline/vim-airline'
