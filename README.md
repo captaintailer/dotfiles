@@ -19,7 +19,7 @@ Tailer의 개발환경 설정하기
         ```zsh
         git config --global user.name "you-name"
         git config --global user.email youremail.com
-        push.default=simple
+        git config --global push.default simple
         ```
 
     2. 개행문자처리
@@ -52,7 +52,11 @@ choco install 패키지명
 
 - 개발툴 패키지모음
     - git
+    - curl
     - which
+        - 리눅스의 which 명령과 동일한 기능
+    - notepad2
+        - 기존 노트패드를 대체할 수 있는 가벼우면서 강력한 텍스트 편집기
 
 
 - 자바 패키지모음
