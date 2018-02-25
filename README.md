@@ -7,13 +7,11 @@ Tailer의 개발환경 설정하기
 부족한 부분은 점차적으로 개선해 나가겠습니다.
 
 # 개발폰트 설치
----
 
 - [Naver D2 CodingFont](https://github.com/naver/d2codingfont)
 - [Naver 나눔고딕코딩](https://github.com/naver/nanumfont)
 
 # 개발환경 공통 설정
----
 
 ## git 설정
 - git config  등록
@@ -40,7 +38,6 @@ Tailer의 개발환경 설정하기
 
 
 # Windows 환경설정
----
 
 ## Chocolatey(NuGet) 설치
 윈도우 커맨드창을 관리자 권한으로 실행 후 아래 명령 입력
@@ -111,7 +108,6 @@ choco install 패키지명
 
 
 # macOS 환경설정
----
 
 ## Homebrew 설치
 ```
@@ -130,7 +126,6 @@ brew install 패키지명 설치옵션
 
 
 # 터미널 설정
----
 
 ## 색상테마
 - [Solarized 공식사이트](http://ethanschoonover.com/solarized)
@@ -167,7 +162,6 @@ brew install 패키지명 설치옵션
     ```
 
 # 기타 설정
----
 
 ## VIM 설치
 
