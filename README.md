@@ -96,9 +96,13 @@ choco install 패키지명
 
 - 유틸리티 패키지모음
     - sourcetree
-    - conemu
+        - Git을 GUI 환경에서 관리하는 툴
+    - cmder
+        - 기존 윈도우 프롬프트 프로그램보다 향상된 콘솔 툴
     - openvpn
+        - openssh 기반 VPN 서비스 클라이언트
     - markdownpad2
+        - 마크다운형식 문서 편집기(프리뷰 지원)
 
 ## Windows 10 Linux 명령사용 환경 구성
 
@@ -133,8 +137,9 @@ brew install 패키지명 설치옵션
 ## 색상테마
 - [Solarized 공식사이트](http://ethanschoonover.com/solarized)
 - [윈도우 프롬프트 적용](https://github.com/neilpa/cmd-colors-solarized)
+    - 다운로드 받은 후에 압축파일 중에 solarized-dark.reg 또는 solarized-light.reg를 선택하여 실행해서 레지스터에 추가함
 - [터미널 디렉토리 표시](https://github.com/seebi/dircolors-solarized)
-
+    - zsh 설정파일에 포함되어 있음
 
 ## zsh 설치
 1. 패키지관리 프로그램을 통해서 zsh 설치
@@ -168,10 +173,23 @@ brew install 패키지명 설치옵션
 
 ## VIM 설치
 
+### VIM 설치
+Windows : choco를 이용하여 VIM설치
+MacOS : brew를 이용하여 VIM설치
+
+### VIM 플러그인 관리자 설치
+Windows
+```
+git clone https://github.com/VundleVim/Vundle.vim.git %USERPROFILE%/.vim/bundle/Vundle.vim
+```
+MacOS
+```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
 ### 개발환경 설정파일을 vimrc 파일에 추가하고 플러그인 설치하기
 ```
 echo "source /path/to/devenv_vimrc >> ~/.vimrc" && vim +PluginInstall
-
 ```
 
 # 개발툴 설정
