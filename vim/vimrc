@@ -131,11 +131,8 @@ if has("gui_macvim")
     autocmd GUIEnter * set vb t_vb=
 endif
 
-""" VIM에서 복사하면 윈도우 클립보드에도 내용이 복사됨
-if has("win16") || has("win32")
-    set clipboard=unnamed
-endif
-
+""" VIM에서 복사하면 시스템 클립보드에도 내용이 복사됨
+set clipboard=unnamed
 
 """"""""""""""""""""""""""""""""""""""""
 " VIM Encoding
