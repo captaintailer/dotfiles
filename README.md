@@ -121,16 +121,50 @@ choco install 패키지명
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
+## Homebrew Cask 설치
+```
+brew tap caskroom/cask
+brew tap caskroom/versions
+```
+
 ## 개발관련 설치
 ```
 brew install 패키지명 설치옵션
+brew cask install 패키지명 설치옵션
 ```
+
+cask 방식으로 설치해야 하는 패키지는 패키지명에(cask) 라고 표기 패키지명 입력시에는 (cask)는 제외함
+택일 할 수 있는 패키지의 경우 or 로 분리하여 표시함
+
+
+- 개발툴 패키지모음
+    - tree
+    - wget
+    - dos2unix
+
 
 - VIM 패키지모음
     - macvim --with-lua --with-luajit --with-override-system-vim --with-python3
-    - ctag
+    - ctags
     - grip
 
+
+- 자바 패키지모음
+    - java8(cask) or java(cask)
+    - ant
+    - maven
+    - gradle
+
+
+- Python 패키지모음
+    - python
+    - python3
+    - anaconda(cask) or anaconda2(cask)
+
+
+- 가상화 & IaC(Infrastructure as Code)
+    - virtualbox(cask)
+    - vagrant(cask)
 
 # 터미널 설정
 

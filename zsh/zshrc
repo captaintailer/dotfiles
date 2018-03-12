@@ -17,7 +17,7 @@ fi
 if [[ `uname` == 'Darwin' ]]
 then
   # PATH
-  export PATH=$PATH:$HOME/anaconda3/bin
+  export PATH=$PATH:/usr/local/anaconda3/bin
 
   # Aliases
   alias vi="mvim -v"
