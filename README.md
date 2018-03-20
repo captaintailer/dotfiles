@@ -142,7 +142,6 @@ cask 방식으로 설치해야 하는 패키지는 패키지명에(cask) 라고 
     - wget
     - dos2unix
 
-
 - VIM 패키지모음
     - macvim --with-lua --with-luajit --with-override-system-vim --with-python3
     - ctags
@@ -183,6 +182,9 @@ cask 방식으로 설치해야 하는 패키지는 패키지명에(cask) 라고 
     
     # Centos
     yum install zsh
+
+    # MacOS
+    brew install zsh
     ```
 
 2. [Oh My ZSH!](http://ohmyz.sh) 설치
