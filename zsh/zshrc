@@ -22,4 +22,5 @@ then
   # Aliases
   alias vi="mvim -v"
   alias vim="mvim -v"
+  alias stree="/Applications/SourceTree.app/Contents/Resources/stree"
 fi
