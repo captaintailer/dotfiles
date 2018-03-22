@@ -220,3 +220,6 @@ set noswapfile                                                                  
 if has("win16") || has("win32")                                                 " Windows
     let g:tagbar_ctags_bin="C:/ProgramData/chocolatey/bin/ctags.exe"            " ctags 실행파일 위치
 endif
+
+""" Gradle
+au BufNewFile,BufRead *.gradle set filetype=groovy
