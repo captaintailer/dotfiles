@@ -134,6 +134,9 @@ endif
 """ VIM에서 복사하면 시스템 클립보드에도 내용이 복사됨
 set clipboard=unnamed
 
+""" VIM에서 whitespace 문자 설정
+set listchars=eol:⏎,tab:>·,trail:~,extends:>,precedes:<,space:·
+
 """"""""""""""""""""""""""""""""""""""""
 " VIM Encoding
 """"""""""""""""""""""""""""""""""""""""
