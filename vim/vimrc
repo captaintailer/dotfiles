@@ -28,7 +28,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'lifepillar/vim-solarized8'
 
 """ Generic Programming Support
-Plugin 'jakedouglas/exuberant-ctags'
+"Plugin 'jakedouglas/exuberant-ctags'
 Plugin 'honza/vim-snippets'
 
 """ Markdown Preview Support
