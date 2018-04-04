@@ -165,6 +165,12 @@ cask 방식으로 설치해야 하는 패키지는 패키지명에(cask) 라고 
     - virtualbox(cask)
     - vagrant(cask)
 
+## 외장모니터 색상 정상화
+- 원인
+    - HDMI로 연결된 외장 모니터가 티비로 인식되어서 색상이 제대로 표현이 안됨
+- [해결방법](https://www.clien.net/service/board/lecture/6832121)
+    
+
 # 터미널 설정
 
 ## 색상테마
