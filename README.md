@@ -164,6 +164,8 @@ cask 방식으로 설치해야 하는 패키지는 패키지명에(cask) 라고 
 - 가상화 & IaC(Infrastructure as Code)
     - virtualbox(cask)
     - vagrant(cask)
+    - ansible
+
 
 ## 외장모니터 색상 정상화
 - 원인
