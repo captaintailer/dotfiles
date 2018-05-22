@@ -30,6 +30,8 @@ Plugin 'lifepillar/vim-solarized8'
 """ Generic Programming Support
 "Plugin 'jakedouglas/exuberant-ctags'
 Plugin 'honza/vim-snippets'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 """ Markdown Preview Support
 if has("mac") || has("macunix")                                                 " OSX
@@ -68,6 +70,10 @@ let g:neocomplete#sources#syntax#min_keyword_length = 2
 
 """ vim-markdown-preview
 let vim_markdown_preview_github=1                                               " GitHub flavoured markdown 지원
+
+""" javascript & nodejs
+let g:jsx_ext_required = 0
+
 
 """"""""""""""""""""""""""""""""""""""""
 " General
