@@ -70,6 +70,7 @@ let g:neocomplete#sources#syntax#min_keyword_length = 2
 
 """ vim-markdown-preview
 let vim_markdown_preview_github=1                                               " GitHub flavoured markdown 지원
+let vim_markdown_preview_toggle=1                                               " 변경사항 발생 시 미리보기  적용시점 설정
 
 """ javascript & nodejs
 let g:jsx_ext_required = 0
@@ -91,8 +92,8 @@ set scrolloff=7                                                                 
 set number                                                                      " 줄번호 표시
 set ruler                                                                       " 쉼표로 구분 된 커서 위치의 행 및 열 번호를 표시
 
-set tabstop=4                                                                   " 하나의 TAB을 몇 칸으로 인식
-set shiftwidth=4                                                                " 자동 들여쓰기 너비 설정
+set tabstop=2                                                                   " 하나의 TAB을 몇 칸으로 인식
+set shiftwidth=2                                                                " 자동 들여쓰기 너비 설정
 set smarttab                                                                    " 적절한 탭위치 자동선정
 set expandtab                                                                   " TAB을 space로 인식
 
