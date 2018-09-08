@@ -20,6 +20,10 @@ Tailer의 개발환경 설정하기
         git config --global user.name "you-name"
         git config --global user.email youremail.com
         git config --global push.default simple
+        
+        # MacOS / Linux일 경우
+        git config --global core.editor "mvim -v"
+        git config --global merge.tool  "mvimdiff -v"
         ```
 
     2. 개행문자처리
