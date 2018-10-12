@@ -37,7 +37,7 @@ Tailer의 개발환경 설정하기
 
 - 특정폴더 밑에 환경설정 용 파일을 체크아웃
     ```
-    git clone https://github.com/captaintailer/devenv ~/.devenv
+    git clone https://github.com/captaintailer/dotfiles ~/.dotfiles
     ```
 
 
@@ -115,7 +115,7 @@ choco install 패키지명
 ## 윈도우 파일에 오른쪽 버튼을 눌렀을 경우 Vim 수정 메뉴 추가
 
 1. vim 설치
-2. "devenv/vim/vim-add-context-menu.reg" 파일 실행해서 레지스터 추가
+2. "dotfiles/vim/vim-add-context-menu.reg" 파일 실행해서 레지스터 추가
 
 
 # macOS 환경설정
@@ -214,8 +214,8 @@ cask 방식으로 설치해야 하는 패키지는 패키지명에(cask) 라고 
 4. 홈디렉토리 밑에 .zshrc 파일 마지막에 다음 내용 추가
     ```zsh
     export WORKSPACE_PATH=D:/Workspace
-    export DEVENV_PATH=~/.devenv
-    source $DEVENV_PATH/zsh/zshrc
+    export DOTFILES_PATH=~/dotfiles
+    source $DOTFILES_PATH/zsh/zshrc
     ```
 
 # 기타 설정
@@ -237,8 +237,9 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
 ### 개발환경 설정파일을 vimrc 파일에 추가하고 플러그인 설치하기
+MacOS
 ```
-echo "source /path/to/devenv_vimrc >> ~/.vimrc" && vim +PluginInstall
+echo "source $DOTFILES_PATH/vim/vimrc" >> ~/.vimrc && vim +PluginInstall
 ```
 
 # 개발툴 설정
