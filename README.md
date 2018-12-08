@@ -205,11 +205,12 @@ cask 방식으로 설치해야 하는 패키지는 패키지명에(cask) 라고 
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     ```
 
-3. [powerlevel9k](https://github.com/bhilburn/powerlevel9k) 테마 설치
+3. [spaceship](https://github.com/denysdovhan/spaceship-prompt) 테마 설치
     ```zsh
-    git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+    git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+    ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
     ```
-    > 홈디렉토리에 .zshrc파일에서 ZSH_THEME 설정을 찾아서 ZSH_THEME="powerlevel9k/powerlevel9k" 으로 수정함
+    > 홈디렉토리에 .zshrc파일에서 ZSH_THEME 설정을 찾아서 ZSH_THEME="spaceship" 으로 수정함
 
 4. 홈디렉토리 밑에 .zshrc 파일 마지막에 다음 내용 추가
     ```zsh
