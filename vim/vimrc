@@ -85,6 +85,14 @@ set history=500                                                                 
 set nowrap                                                                      " 자동 줄바꿈 하지 않음
 
 """"""""""""""""""""""""""""""""""""""""
+" VIM Encoding
+""""""""""""""""""""""""""""""""""""""""
+set encoding=utf-8                                                              " 기본 인코딩
+set fileencodings=utf-8,euc-kr                                                  " 파일 인코딩
+set fileformats=unix,dos,mac                                                    " 파일 줄바꿈 포맷 인식순서
+set fileformat=unix                                                             " 파일 줄바꿈 기본 포멧
+
+""""""""""""""""""""""""""""""""""""""""
 " VIM User Interface
 """"""""""""""""""""""""""""""""""""""""
 set scrolloff=7                                                                 " 커서 주위에 표시 할 스크린 줄 수
@@ -143,14 +151,6 @@ set clipboard=unnamed
 
 """ VIM에서 whitespace 문자 설정
 set listchars=eol:⏎,tab:>·,trail:~,extends:>,precedes:<,space:·
-
-""""""""""""""""""""""""""""""""""""""""
-" VIM Encoding
-""""""""""""""""""""""""""""""""""""""""
-set encoding=utf8                                                               " 기본 인코딩
-set fileencodings=utf-8,euc-kr                                                  " 파일 인코딩
-set fileformats=unix,dos,mac                                                    " 파일 줄바꿈 포맷 인식순서
-set fileformat=unix                                                             " 파일 줄바꿈 기본 포멧
 
 """"""""""""""""""""""""""""""""""""""""
 " VIM Theme & Styling
