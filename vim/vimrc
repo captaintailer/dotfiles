@@ -32,6 +32,7 @@ Plugin 'lifepillar/vim-solarized8'
 Plugin 'honza/vim-snippets'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'leafgarland/typescript-vim'
 
 """ Markdown Preview Support
 if has("mac") || has("macunix")                                                 " OSX
