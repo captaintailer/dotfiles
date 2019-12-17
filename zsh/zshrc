@@ -10,17 +10,14 @@ if [[ `uname` == 'Linux' ]]
 then
   # Aliases
   alias vi="vim"
-
 fi
 
 # macOS일 경우
 if [[ `uname` == 'Darwin' ]]
 then
-  # PATH
-  export PATH=$PATH:/usr/local/anaconda3/bin
-
   # Aliases
+  alias cbclean='killall pboard'
+  alias cleardns='sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache'
   alias vi="mvim -v"
   alias vim="mvim -v"
-  alias stree="/Applications/SourceTree.app/Contents/Resources/stree"
 fi
