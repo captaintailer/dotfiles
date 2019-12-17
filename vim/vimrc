@@ -14,30 +14,16 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 """ 유틸리티
-Plugin 'scrooloose/nerdtree'
-Plugin 'majutsushi/tagbar'
-"Plugin 'ervandew/supertab'
-Plugin 'godlygeek/tabular'
-Plugin 'SirVer/ultisnips'
-Plugin 'Shougo/neocomplete.vim'
+Plugin 'terryma/vim-multiple-cursors'
 
 """ 테마 & 인터페이스
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-"Plugin 'altercation/vim-colors-solarized'
 Plugin 'lifepillar/vim-solarized8'
 
 """ Generic Programming Support
-"Plugin 'jakedouglas/exuberant-ctags'
-Plugin 'honza/vim-snippets'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'leafgarland/typescript-vim'
-
-""" Markdown Preview Support
-if has("mac") || has("macunix")                                                 " OSX
-    Plugin 'JamshedVesuna/vim-markdown-preview'
-endif
+Plugin 'plasticboy/vim-markdown'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end()
 
@@ -55,27 +41,6 @@ let g:airline_theme='solarized'
 
 """ NERDTree
 map <C-n> :NERDTreeToggle<CR>
-
-""" Tagbar
-map <C-m> :TagbarToggle<CR>
-
-""" UtilSnips
-let g:UltiSnipsExpandTrigger="<Tab>"                                            " 트리거 설정. YouCompleteMe 사용 시 <Tab> 사용금지
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsEditSplit="vertical"                                             " :UltiSnipsEdit 사용 시 윈도우 분할 기준
-
-""" Neocomplete
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#sources#syntax#min_keyword_length = 2
-
-""" vim-markdown-preview
-let vim_markdown_preview_github=1                                               " GitHub flavoured markdown 지원
-let vim_markdown_preview_toggle=1                                               " 변경사항 발생 시 미리보기  적용시점 설정
-
-""" javascript & nodejs
-let g:jsx_ext_required = 0
-
 
 """"""""""""""""""""""""""""""""""""""""
 " General
